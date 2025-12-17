@@ -10,10 +10,8 @@ import { Badge } from '@/components/ui/badge'
 import { Avatar, AvatarFallback } from '@/components/ui/avatar'
 import {
     Calendar,
-    BookOpen,
     ClipboardList,
     Bell,
-    Clock,
     TrendingUp,
     Award,
     FileText,
@@ -129,10 +127,10 @@ export function StudentDashboard() {
                                     <div
                                         key={index}
                                         className={`flex items-center justify-between p-3 rounded-xl transition-all ${cls.status === 'current'
-                                                ? 'bg-[var(--primary)]/10 border-2 border-[var(--primary)]'
-                                                : cls.status === 'completed'
-                                                    ? 'bg-[var(--muted)] opacity-60'
-                                                    : 'bg-[var(--muted)]'
+                                            ? 'bg-[var(--primary)]/10 border-2 border-[var(--primary)]'
+                                            : cls.status === 'completed'
+                                                ? 'bg-[var(--muted)] opacity-60'
+                                                : 'bg-[var(--muted)]'
                                             }`}
                                     >
                                         <div className="flex items-center gap-4">
@@ -179,12 +177,12 @@ export function StudentDashboard() {
                                     >
                                         <div className="flex items-center gap-4">
                                             <div className={`h-10 w-10 rounded-lg flex items-center justify-center ${assignment.priority === 'high' ? 'bg-[var(--color-danger-500)]/10' :
-                                                    assignment.priority === 'medium' ? 'bg-[var(--color-warning-500)]/10' :
-                                                        'bg-[var(--muted)]'
+                                                assignment.priority === 'medium' ? 'bg-[var(--color-warning-500)]/10' :
+                                                    'bg-[var(--muted)]'
                                                 }`}>
                                                 <FileText className={`h-5 w-5 ${assignment.priority === 'high' ? 'text-[var(--color-danger-500)]' :
-                                                        assignment.priority === 'medium' ? 'text-[var(--color-warning-500)]' :
-                                                            'text-[var(--muted-foreground)]'
+                                                    assignment.priority === 'medium' ? 'text-[var(--color-warning-500)]' :
+                                                        'text-[var(--muted-foreground)]'
                                                     }`} />
                                             </div>
                                             <div>

@@ -16,11 +16,7 @@ import {
     Clock,
     Eye,
     Filter,
-    Users,
-    CreditCard,
-    Calendar,
-    FileText,
-    AlertTriangle
+    FileText
 } from 'lucide-react'
 
 // Sample approvals data
@@ -220,7 +216,7 @@ export function PrincipalApprovals() {
                                 data={pendingApprovals}
                                 keyExtractor={(item) => item.id}
                                 searchPlaceholder="Search approvals..."
-                                actions={(item) => (
+                                actions={(_item) => (
                                     <div className="flex items-center gap-2">
                                         <Button size="sm" variant="ghost">
                                             <Eye className="h-4 w-4" />

@@ -3,7 +3,6 @@ import { useApp } from '@/context/AppContext'
 import { Sidebar } from './Sidebar'
 import { TopNav } from './TopNav'
 import { cn } from '@/lib/utils'
-import { Badge } from '@/components/ui/badge'
 import { roleDisplayNames } from '@/lib/constants'
 
 interface MainLayoutProps {

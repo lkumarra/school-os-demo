@@ -25,7 +25,6 @@ import {
     Sparkles,
     AlertCircle,
     TrendingUp,
-    Calendar,
     Barcode
 } from 'lucide-react'
 
@@ -209,8 +208,8 @@ export function LibraryDashboard() {
                                     {recentTransactions.map((tx) => (
                                         <div key={tx.id} className="flex items-center gap-4 p-3 rounded-lg bg-[var(--muted)]/50">
                                             <div className={`h-10 w-10 rounded-full flex items-center justify-center ${tx.type === 'issue' ? 'bg-blue-500/10 text-blue-500' :
-                                                    tx.type === 'return' ? 'bg-green-500/10 text-green-500' :
-                                                        'bg-red-500/10 text-red-500'
+                                                tx.type === 'return' ? 'bg-green-500/10 text-green-500' :
+                                                    'bg-red-500/10 text-red-500'
                                                 }`}>
                                                 {tx.type === 'issue' ? <BookMarked className="h-5 w-5" /> :
                                                     tx.type === 'return' ? <RefreshCw className="h-5 w-5" /> :

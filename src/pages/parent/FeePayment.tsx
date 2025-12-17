@@ -15,8 +15,6 @@ import {
     Download,
     Check,
     Clock,
-    AlertCircle,
-    Calendar,
     Receipt,
     IndianRupee
 } from 'lucide-react'
@@ -85,8 +83,8 @@ export function ParentFeePayment() {
                                     key={child.id}
                                     onClick={() => setSelectedChild(child)}
                                     className={`flex items-center gap-3 px-4 py-2 rounded-xl transition-all ${selectedChild.id === child.id
-                                            ? 'bg-[var(--primary)] text-white'
-                                            : 'bg-[var(--muted)] hover:bg-[var(--accent)]'
+                                        ? 'bg-[var(--primary)] text-white'
+                                        : 'bg-[var(--muted)] hover:bg-[var(--accent)]'
                                         }`}
                                 >
                                     <Avatar className="h-8 w-8">

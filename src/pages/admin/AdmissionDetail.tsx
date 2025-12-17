@@ -8,9 +8,7 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/com
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Avatar, AvatarFallback } from '@/components/ui/avatar'
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import {
-    ArrowLeft,
     CheckCircle,
     XCircle,
     Mail,
@@ -20,9 +18,7 @@ import {
     FileText,
     Download,
     MessageSquare,
-    User,
-    GraduationCap,
-    Building
+    User
 } from 'lucide-react'
 
 export function AdminAdmissionDetail() {

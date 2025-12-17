@@ -6,7 +6,7 @@
 import { useNavigate } from 'react-router-dom'
 import { useApp } from '@/context/AppContext'
 import { AuthLayout } from '@/components/layout'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import { Card, CardContent } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { roleDisplayNames, roleColors } from '@/lib/constants'
 import type { UserRole } from '@/types'

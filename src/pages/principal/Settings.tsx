@@ -10,14 +10,11 @@ import { Input } from '@/components/ui/input'
 import { Badge } from '@/components/ui/badge'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import {
-    Settings,
     Building,
     Users,
     Bell,
     Shield,
     Palette,
-    Globe,
-    Mail,
     Calendar,
     Save,
     Upload,

@@ -15,18 +15,15 @@ import {
     Users,
     GraduationCap,
     CreditCard,
-    TrendingUp,
     Calendar,
     Bell,
     FileText,
     CheckCircle,
     Clock,
-    AlertTriangle,
     Sparkles,
     BarChart3,
     ArrowRight,
-    BookOpen,
-    Bus
+    BookOpen
 } from 'lucide-react'
 
 // Sample AI insights

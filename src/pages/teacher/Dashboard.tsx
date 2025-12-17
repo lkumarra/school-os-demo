@@ -9,7 +9,6 @@ import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { StatsCard } from '@/components/cards/StatsCard'
 import { AISuggestion } from '@/components/cards/AIInsightCard'
-import { Avatar, AvatarFallback } from '@/components/ui/avatar'
 import {
     CalendarCheck,
     Clock,
@@ -102,10 +101,10 @@ export function TeacherDashboard() {
                                     <div
                                         key={index}
                                         className={`flex items-center justify-between p-4 rounded-xl transition-all ${item.status === 'current'
-                                                ? 'bg-[var(--primary)]/10 border-2 border-[var(--primary)]'
-                                                : item.status === 'completed'
-                                                    ? 'bg-[var(--muted)] opacity-60'
-                                                    : 'bg-[var(--muted)] hover:bg-[var(--accent)]'
+                                            ? 'bg-[var(--primary)]/10 border-2 border-[var(--primary)]'
+                                            : item.status === 'completed'
+                                                ? 'bg-[var(--muted)] opacity-60'
+                                                : 'bg-[var(--muted)] hover:bg-[var(--accent)]'
                                             }`}
                                     >
                                         <div className="flex items-center gap-4">

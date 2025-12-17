@@ -18,8 +18,7 @@ import {
     Eye,
     Edit,
     MoreHorizontal,
-    GraduationCap,
-    Filter
+    GraduationCap
 } from 'lucide-react'
 import {
     DropdownMenu,
@@ -191,7 +190,7 @@ export function AdminStudentMaster() {
                                 ]
                             }
                         ]}
-                        actions={(item) => (
+                        actions={(_item) => (
                             <DropdownMenu>
                                 <DropdownMenuTrigger asChild>
                                     <Button variant="ghost" size="sm">

@@ -10,7 +10,6 @@ import {
     CalendarCheck,
     ClipboardList,
     CreditCard,
-    UserCog,
     Bus,
     Building2,
     BookOpen,

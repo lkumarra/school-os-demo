@@ -16,7 +16,6 @@ import {
     Filter,
     ChevronLeft,
     ChevronRight,
-    MoreHorizontal,
     ChevronDown
 } from 'lucide-react'
 

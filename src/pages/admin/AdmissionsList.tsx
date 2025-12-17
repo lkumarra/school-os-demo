@@ -3,7 +3,7 @@
  * List and manage admission applications
  */
 
-import { useState } from 'react'
+
 import { MainLayout } from '@/components/layout'
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
@@ -21,7 +21,6 @@ import {
     XCircle,
     Clock,
     Download,
-    Filter,
     Mail,
     Phone
 } from 'lucide-react'
@@ -229,7 +228,7 @@ export function AdminAdmissionsList() {
                                         ]
                                     }
                                 ]}
-                                actions={(item) => (
+                                actions={(_item) => (
                                     <div className="flex items-center gap-1">
                                         <Button size="sm" variant="ghost">
                                             <Eye className="h-4 w-4" />
@@ -247,7 +246,7 @@ export function AdminAdmissionsList() {
                                 columns={columns}
                                 data={admissions.filter(a => a.status === 'pending')}
                                 keyExtractor={(item) => item.id}
-                                actions={(item) => (
+                                actions={(_item) => (
                                     <div className="flex items-center gap-1">
                                         <Button size="sm" variant="ghost">
                                             <Eye className="h-4 w-4" />

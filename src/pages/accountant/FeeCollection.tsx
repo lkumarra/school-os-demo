@@ -9,15 +9,14 @@ import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { DataTable, StatusBadge } from '@/components/tables'
 import { StatsCard } from '@/components/cards/StatsCard'
-import { AIInsightCard } from '@/components/cards/AIInsightCard'
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
+
+
 import {
     CreditCard,
     Download,
     IndianRupee,
     TrendingUp,
     Clock,
-    Users,
     Send,
     Sparkles,
     PieChart

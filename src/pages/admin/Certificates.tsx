@@ -13,7 +13,6 @@ import {
     Download,
     Printer,
     Search,
-    Plus,
     Award,
     GraduationCap,
     UserCheck,

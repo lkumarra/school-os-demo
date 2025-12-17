@@ -15,7 +15,6 @@ import {
     ClipboardList,
     Plus,
     FileText,
-    Calendar,
     Users,
     BarChart3,
     Download,
@@ -83,8 +82,8 @@ export function TeacherExams() {
             render: (item: typeof studentResults[0]) => (
                 item.marks !== null ? (
                     <span className={`font-medium ${(item.marks / item.maxMarks * 100) >= 75 ? 'text-[var(--color-success-500)]' :
-                            (item.marks / item.maxMarks * 100) >= 50 ? 'text-[var(--color-warning-500)]' :
-                                'text-[var(--color-danger-500)]'
+                        (item.marks / item.maxMarks * 100) >= 50 ? 'text-[var(--color-warning-500)]' :
+                            'text-[var(--color-danger-500)]'
                         }`}>
                         {((item.marks / item.maxMarks) * 100).toFixed(0)}%
                     </span>
@@ -146,12 +145,12 @@ export function TeacherExams() {
                                         >
                                             <div className="flex items-center gap-4">
                                                 <div className={`h-12 w-12 rounded-xl flex items-center justify-center ${exam.status === 'upcoming' ? 'bg-[var(--primary)]/10' :
-                                                        exam.status === 'grading' ? 'bg-[var(--color-warning-500)]/10' :
-                                                            'bg-[var(--color-success-500)]/10'
+                                                    exam.status === 'grading' ? 'bg-[var(--color-warning-500)]/10' :
+                                                        'bg-[var(--color-success-500)]/10'
                                                     }`}>
                                                     <ClipboardList className={`h-6 w-6 ${exam.status === 'upcoming' ? 'text-[var(--primary)]' :
-                                                            exam.status === 'grading' ? 'text-[var(--color-warning-500)]' :
-                                                                'text-[var(--color-success-500)]'
+                                                        exam.status === 'grading' ? 'text-[var(--color-warning-500)]' :
+                                                            'text-[var(--color-success-500)]'
                                                         }`} />
                                                 </div>
                                                 <div>

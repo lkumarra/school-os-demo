@@ -13,14 +13,12 @@ import {
     BookOpen,
     FileText,
     Video,
-    Link,
     Download,
     Search,
     Play,
     Eye,
     Sparkles,
-    Clock,
-    Star
+    Clock
 } from 'lucide-react'
 
 // Learning materials
