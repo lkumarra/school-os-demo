@@ -1,0 +1,1 @@
+export { HostelDashboard } from './Dashboard'
